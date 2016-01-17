@@ -7,8 +7,13 @@ SITENAME = u"Michael's blog"
 SITEURL = ''
 PATH = 'content'
 TIMEZONE = 'Asia/Shanghai'
+DATE_FORMATS = {
+    'zh_CN': '%Y-%m-%d %H:%M:%S',
+}
 DEFAULT_DATE_FORMAT = '%Y/%m/%d %H:%M:%S %a'
-DEFAULT_LANG = u'en'
+DEFAULT_DATE = 'fs'  # use filesystem's mtime
+LOCALE = ('zh_CN.utf8',)
+DEFAULT_LANG = u'zh_CN'
 
 # licence 
 CC_LICENSE = 'by-nc-sa'
