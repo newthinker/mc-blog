@@ -81,7 +81,7 @@ PLUGINS = [
     # 'pandoc_reader',
     # 'update_date',
     # 'extract_headings',
-    'sitemap',
+    # 'sitemap',
     # 'summary',
     # 'niux2_lazyload_helper',
     # 'niux2_hermit_player',
