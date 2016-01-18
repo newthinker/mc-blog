@@ -12,14 +12,14 @@ DATE_FORMATS = {
 }
 DEFAULT_DATE_FORMAT = '%Y/%m/%d %H:%M:%S %a'
 DEFAULT_DATE = 'fs'  # use filesystem's mtime
-LOCALE = ('zh_CN.utf8',)
-DEFAULT_LANG = u'zh_CN'
+# LOCALE = ('zh_CN.utf8',)
+DEFAULT_LANG = u'en'
 
-# licence 
+# licence
 CC_LICENSE = 'by-nc-sa'
 
 ## theme settings
-THEME = '/mc/virtualenv/mc-blog/blog/themes/pelican-bootstrap3'
+THEME = './themes/niu-x2-sidebar'
 #BANNER = '/mc/virtualenv/mc-blog/blog/themes/pictures/banner1.jpg'
 #BANNER_SUBTITLE = 'ZONE FOR CHO'
 
@@ -37,7 +37,7 @@ AUTHOR_FEED_RSS = None
 
 # Social widget
 SOCIAL = (('github', 'https://github.com/newthinker'),
-	  ('twitter', 'https://twitter.com/zone4cho'),)
+        ('twitter', 'https://twitter.com/zone4cho'),)
 
 DELETE_OUTPUT_DIRECTORY = True
 OUTPUT_RETENTION = ['.git', '.gitignore']
@@ -49,6 +49,7 @@ GITHUB_USER = 'newthinker'
 STATIC_PATHS = [
     'images',
     'extra',
+    'pdfs'
 ]
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
@@ -67,3 +68,23 @@ SLUGIFY_SOURCE = 'basename'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{slug}.html'
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{slug}.html'
 YEAR_ARCHIVE_SAVE_AS = 'posts/{date:%Y}/index.html'
+
+
+JINJA_EXTENSIONS = [
+    'jinja2.ext.ExprStmtExtension',
+]
+
+# plugin config
+PLUGIN_PATHS = ['./plugins']
+PLUGINS = [
+    # 'gzip_cache',
+    # 'pandoc_reader',
+    # 'update_date',
+    # 'extract_headings',
+    'sitemap',
+    # 'summary',
+    # 'niux2_lazyload_helper',
+    # 'niux2_hermit_player',
+    # 'minify',
+]
+UPDATEDATE_MODE = 'metadata'
