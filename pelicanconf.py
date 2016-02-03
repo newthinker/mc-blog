@@ -4,23 +4,23 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Michael Cho'
 SITENAME = u"Michael's blog"
-SITEURL = ''
-PATH = 'content'
+SITEURL = 'http://blog.zone4cho.me'
+
 TIMEZONE = 'Asia/Shanghai'
 DATE_FORMATS = {
     'zh_CN': '%Y-%m-%d %H:%M:%S',
 }
-DEFAULT_DATE_FORMAT = '%Y/%m/%d %H:%M:%S %a'
+DEFAULT_DATE_FORMAT = '%Y-%m-%d %H:%M:%S'
 DEFAULT_DATE = 'fs'  # use filesystem's mtime
-# LOCALE = ('zh_CN.utf8',)
-DEFAULT_LANG = u'en'
+LOCALE = ('zh_CN.utf8',)
+DEFAULT_LANG = u'zh_CN'
+FILENAME_METADATA = '(?P<slug>.*)'
 
 # licence
 CC_LICENSE = 'by-nc-sa'
 
 ## theme settings
 THEME = './themes/niu-x2-sidebar'
-#BANNER = '/mc/virtualenv/mc-blog/blog/themes/pictures/banner1.jpg'
 #BANNER_SUBTITLE = 'ZONE FOR CHO'
 
 # Feed generation is usually not desired when developing
@@ -36,8 +36,9 @@ AUTHOR_FEED_RSS = None
 #         ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/newthinker'),
-        ('twitter', 'https://twitter.com/zone4cho'),)
+SOCIAL = (
+    ('github', 'https://github.com/newthinker'),
+    ('twitter', 'https://twitter.com/zone4cho'))
 
 DELETE_OUTPUT_DIRECTORY = True
 OUTPUT_RETENTION = ['.git', '.gitignore']
