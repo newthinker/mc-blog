@@ -60,7 +60,7 @@ EXTRA_PATH_METADATA = {
 DEFAULT_PAGINATION = 10
 
 # article path
-PATH = '/mc/virtualenv/mc-blog/blog/content'
+PATH = './content'
 ARTICLE_PATHS = ['posts']
 
 # URL settings
@@ -79,12 +79,12 @@ JINJA_EXTENSIONS = [
 # plugin config
 PLUGIN_PATHS = ['./plugins']
 PLUGINS = [
-    # 'gzip_cache',
+    'gzip_cache',
     # 'pandoc_reader',
     # 'update_date',
     # 'extract_headings',
     # 'sitemap',
-    # 'summary',
+    'summary',
     # 'niux2_lazyload_helper',
     # 'niux2_hermit_player',
     # 'minify',
