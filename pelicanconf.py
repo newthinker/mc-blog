@@ -50,7 +50,8 @@ GITHUB_USER = 'newthinker'
 STATIC_PATHS = [
     'images',
     'extra',
-    'pdfs'
+    'pdfs',
+    'keys'
 ]
 EXTRA_PATH_METADATA = {
     'extra/favicon.ico': {'path': 'favicon.ico'},
